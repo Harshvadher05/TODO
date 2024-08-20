@@ -7,13 +7,12 @@ body {
     display: flex;
     justify-content: center;
     padding-top: 150px;
-    background-image: url("pic\\bg.jpg");
+    background-image: url("pics\\bg.jpg");
     background-size: cover;
     height: 100vh;
 }
 
 .container {
-    /* border: 2px solid black; */
     padding: 50px;
     box-shadow: 0 0 50px black;
     display: flex;
@@ -36,7 +35,6 @@ h1 {
 }
 
 h1:hover {
-    /* color: white; */
     text-shadow: 0 0 15px palegreen;
 }
 
@@ -58,11 +56,6 @@ h1:hover {
     transform: scale(1.05);
 }
 
-
-/* .task_site {
-    width: auto;
-} */
-
 ul {
     margin-top: 10px;
     height: 150px;
@@ -83,8 +76,6 @@ button {
 }
 
 .cb {
-    /* margin-right: 5px; */
-    /* margin-bottom: 15px; */
     cursor: pointer;
     width: 15px;
     height: 15px;
