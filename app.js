@@ -1,36 +1,3 @@
-// // by basic JS
-// let todo = [];
-// let req = prompt("enter the new request");
-// while (true) {
-//     if (req == "quit") {
-//         console.log("quitting the todo...");
-//         break;
-//     }
-//     if (req == "list") {
-//         console.log("--------------------");
-//         for (let i = 0; i < todo.length; i++) {
-//             console.log(i, todo[i]);
-//         }
-//         console.log("--------------------");
-//     }
-//     else if (req == "add") {
-//         let task = prompt("enter the task you want to add");
-//         todo.push(task);
-//         console.log("task added...");
-//     }
-//     else if (req == "delete") {
-//         let index = prompt("enter the index you want to delete");
-//         todo.splice(index, 1);
-//         console.log("task deleted...");
-//     }
-//     else {
-//         console.log("wrong request..!!!");
-//     }
-//     req = prompt("enter the new request");
-// }
-
-//-----------------------------------------------------------------------------
-
 let btn = document.querySelector("button");
 let inp = document.querySelector("input");
 let ul = document.querySelector("ul");
@@ -72,17 +39,6 @@ function addTask() {
         inp.value = "";
         inp.placeholder = "Enter new task";
 
-
-        // // add event listener to new ckeckbox of new tasks
-        // check.addEventListener("change", () => {
-
-        //     if (check.checked) {
-        //         check.parentElement.childNodes[1].className = "strike_text";
-        //     }
-        //     else {
-        //         check.parentElement.childNodes[1].className = "text";
-        //     }
-        // });
     }
 }
 
@@ -106,16 +62,3 @@ ul.addEventListener("change", (e) => {
         }
     }
 });
-
-// // event listener for pretask's checkbox
-// document.querySelectorAll(".cb").forEach(check => {
-//     check.addEventListener("change", () => {
-
-//         if (check.checked) {
-//             check.parentElement.childNodes[1].className = "strike_text";
-//         }
-//         else {
-//             check.parentElement.childNodes[1].className = "text";
-//         }
-//     });
-// });
